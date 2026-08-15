@@ -32,3 +32,10 @@ Design decisions and their trade-offs are recorded in [`docs/`](docs/). The visu
 ## Known limits
 
 No authentication and no rate limiting — anyone with the URL spends the deployer's OpenRouter credits. Nutrition values are photo estimates, not measurements.
+
+## Todo
+
+- [ ] Review the correctness of the stated nutritional facts.
+- [ ] Explore a proper food database (e.g. Nutritionix) and make the lookup agentic, to ground the nutritional facts better than open web search does.
+- [ ] Explore a different model for the chat to cut cost, so `gemini-3.7-flash` is only used to analyse the image.
+- [ ] Build logging and error flagging so we get an alert when the AI misbehaves in production (possibly Langfuse).
